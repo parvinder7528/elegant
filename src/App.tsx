@@ -9,6 +9,9 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import Regents from "./components/Regents";
+
+import Nundah from "./components/location/Nundah"
 
 const queryClient = new QueryClient();
 
@@ -24,6 +27,8 @@ const App = () => (
           <Route path="/about" element={<About />}/>
           <Route path="/gallery" element={<Gallery />}/>
           <Route path="/contact" element={<Contact />}/>
+          <Route path="/locations/regents-park" element={<Regents />}/>
+          <Route path="/locations/nundah" element={<Nundah />}/>
 
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
