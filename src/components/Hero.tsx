@@ -5,45 +5,45 @@ import useEmblaCarousel from "embla-carousel-react";
 // Using service images for gallery
 
 const Hero = () => {
-   const testimonials = [
-  {
-    name: "Sarah Mitchell",
-    service: "Spa & Aesthetics",
-    quote:
-      "E'LAN Beauty has completely transformed my self-care routine. The attention to detail and luxurious atmosphere make every visit feel like a retreat.",
-    rating: 5,
-  },
-  {
-    name: "Emma Thompson",
-    service: "Hair Beauty",
-    quote:
-      "My wedding day look was absolutely perfect. They understood my vision completely and made me feel like a queen.",
-    rating: 5,
-  },
-  {
-    name: "Rachel Williams",
-    service: "Makeover",
-    quote:
-      "The makeover session was transformative! I felt so confident and beautiful. They exceeded my expectations.",
-    rating: 5,
-  },
-  {
-    name: "Charlotte Davies",
-    service: "Head Spa",
-    quote:
-      "Pure relaxation combined with visible results. My hair has never been healthier.",
-    rating: 5,
-  },
-  {
-    name: "Jessica Brown",
-    service: "Nails",
-    quote:
-      "The nail artistry here is exceptional. Every detail is perfect and long lasting.",
-    rating: 5,
-  },
-];
+  const testimonials = [
+    {
+      name: "Sarah Mitchell",
+      service: "Spa & Aesthetics",
+      quote:
+        "E'LAN Beauty has completely transformed my self-care routine. The attention to detail and luxurious atmosphere make every visit feel like a retreat.",
+      rating: 5,
+    },
+    {
+      name: "Emma Thompson",
+      service: "Hair Beauty",
+      quote:
+        "My wedding day look was absolutely perfect. They understood my vision completely and made me feel like a queen.",
+      rating: 5,
+    },
+    {
+      name: "Rachel Williams",
+      service: "Makeover",
+      quote:
+        "The makeover session was transformative! I felt so confident and beautiful. They exceeded my expectations.",
+      rating: 5,
+    },
+    {
+      name: "Charlotte Davies",
+      service: "Head Spa",
+      quote:
+        "Pure relaxation combined with visible results. My hair has never been healthier.",
+      rating: 5,
+    },
+    {
+      name: "Jessica Brown",
+      service: "Nails",
+      quote:
+        "The nail artistry here is exceptional. Every detail is perfect and long lasting.",
+      rating: 5,
+    },
+  ];
 
- const [emblaRef, emblaApi] = useEmblaCarousel({
+  const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
   });
@@ -69,808 +69,822 @@ const Hero = () => {
   }, [emblaApi, onSelect]);
   return (
     <>
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          alt="E'LAN BEAUTY Luxury Spa"
-          className="w-full h-full object-cover object-center"
-          src="https://public.readdy.ai/ai/img_res/c923059c85179a03c4ebe6cc176ae266.jpg"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
-      </div>
-      <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight">
-          E'LAN BEAUTY
-        </h1>
-        <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-light mb-4 tracking-wide">
-          Where Elegance Meets Excellence
-        </h2>
-        <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed opacity-90">
-          A sanctuary of beauty, artistry, and relaxation
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href="/book-experience"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "16px 32px",
-              fontSize: "18px",
-              fontWeight: 500,
-              color: "#ffffff",
-              textDecoration: "none",
-              whiteSpace: "nowrap",
-              borderRadius: "12px",
-              cursor: "pointer",
-              background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)", // dark brown
-              boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
-              transition: "all 0.3s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background =
-                "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
-              e.currentTarget.style.boxShadow =
-                "0 12px 32px rgba(75, 42, 31, 0.5)";
-              e.currentTarget.style.transform = "scale(1.05)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background =
-                "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
-              e.currentTarget.style.boxShadow =
-                "0 8px 24px rgba(75, 42, 31, 0.35)";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            Book Your Experience
-          </a>
-
-          <button
-            className="inline-flex items-center justify-center font-medium transition-all duration-300 whitespace-nowrap cursor-pointer 
-border-2 border-white text-white 
-hover:bg-white hover:text-primary 
-px-8 py-4 text-lg rounded-lg transform hover:scale-105"
-          >
-            Explore Our Locations
-          </button>
-        </div>
-      </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse" />
-        </div>
-      </div>
-    </section>
-
-{/* about  */}
- <section className="py-24 bg-white">
-  <div className="max-w-4xl mx-auto px-6 text-center">
-    <div className="mb-12">
-      <div className="w-16 h-px bg-rose-400 mx-auto mb-8" />
-      <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-8 leading-relaxed">
-        At E'LAN BEAUTY, we believe beauty is personal.
-      </h2>
-      <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-        Every treatment is an experience, crafted with care, expertise, and
-        intention.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-      <div className="text-center">
-        <img
-          alt="Luxury Care"
-          className="w-full h-64 object-cover rounded-lg mb-4"
-          src="https://public.readdy.ai/ai/img_res/0b7cafdc776fd8fd71c66783433bce46.jpg"
-        />
-        <h3 className="font-serif text-xl text-gray-800 mb-2">
-          Artistry in Motion
-        </h3>
-        <p className="text-gray-600">Every touch tells a story of expertise</p>
-      </div>
-      <div className="text-center">
-        <img
-          alt="Premium Products"
-          className="w-full h-64 object-cover rounded-lg mb-4"
-          src="https://readdy.ai/api/search-image?query=luxury%20beauty%20products%20and%20tools%20arranged%20elegantly%2C%20premium%20skincare%20bottles%2C%20rose%20gold%20accents%2C%20minimalist%20spa%20setting%20with%20soft%20natural%20lighting&width=400&height=300&seq=intro2&orientation=landscape"
-        />
-        <h3 className="font-serif text-xl text-gray-800 mb-2">
-          Premium Excellence
-        </h3>
-        <p className="text-gray-600">
-          Only the finest products grace your skin
-        </p>
-      </div>
-      <div className="text-center">
-        <img
-          alt="Calm Atmosphere"
-          className="w-full h-64 object-cover rounded-lg mb-4"
-          src="https://readdy.ai/api/search-image?query=serene%20spa%20environment%20with%20soft%20textures%2C%20calming%20neutral%20tones%2C%20peaceful%20atmosphere%2C%20luxury%20wellness%20sanctuary%20with%20warm%20ambient%20lighting&width=400&height=300&seq=intro3&orientation=landscape"
-        />
-        <h3 className="font-serif text-xl text-gray-800 mb-2">
-          Tranquil Sanctuary
-        </h3>
-        <p className="text-gray-600">Where time slows and beauty awakens</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{/* experndec */}
-  <section className="py-24 bg-gradient-to-br from-rose-50 to-pink-50">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
-        The E'LAN Experience
-      </h2>
-      <div className="w-24 h-px bg-rose-400 mx-auto" />
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
-        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
-          <i className="ri-heart-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
-        </div>
-        <h3 className="font-serif text-xl text-gray-800 mb-4">Luxury Care</h3>
-        <p className="text-gray-600 leading-relaxed">
-          Indulgent treatments that nurture your natural beauty with the finest
-          techniques and premium products.
-        </p>
-      </div>
-      <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
-        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
-          <i className="ri-brush-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
-        </div>
-        <h3 className="font-serif text-xl text-gray-800 mb-4">
-          Expert Artists
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          Our skilled professionals bring years of expertise and artistic vision
-          to every service.
-        </p>
-      </div>
-      <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
-        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
-          <i className="ri-star-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
-        </div>
-        <h3 className="font-serif text-xl text-gray-800 mb-4">
-          Premium Products
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          We exclusively use high-end, carefully selected products that deliver
-          exceptional results.
-        </p>
-      </div>
-      <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
-        <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
-          <i className="ri-leaf-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
-        </div>
-        <h3 className="font-serif text-xl text-gray-800 mb-4">
-          Calm Atmosphere
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          Step into our serene sanctuary designed to relax your mind and
-          rejuvenate your spirit.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{/* service  */}
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
-        Our Signature Services
-      </h2>
-      <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Discover our comprehensive range of beauty and wellness services, each
-        designed to enhance your natural elegance.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-      <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div className="relative overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
           <img
-            alt="Spa & Aesthetics"
-            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://public.readdy.ai/ai/img_res/c24565c0aae2150b2aeae37ce06c3add.jpg"
+            alt="E'LAN BEAUTY Luxury Spa"
+            className="w-full h-full object-cover object-center"
+            src="https://public.readdy.ai/ai/img_res/c923059c85179a03c4ebe6cc176ae266.jpg"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
         </div>
-        <div className="p-6 bg-white">
-          <h3 className="font-serif text-xl text-gray-800 mb-3">
-            Spa &amp; Aesthetics
-          </h3>
-          <p className="text-gray-600 mb-4 leading-relaxed">
-            Rejuvenating treatments that restore your skin's natural radiance
-            and vitality.
-          </p>
-          <a
-            href="/services"
-            className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
-          >
-            Explore Service
-            <i className="ri-arrow-right-line ml-2" />
-          </a>
-        </div>
-      </div>
-      <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div className="relative overflow-hidden">
-          <img
-            alt="Hair Beauty"
-            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=elegant%20hair%20salon%20with%20professional%20stylist%2C%20luxury%20hair%20treatment%2C%20modern%20beauty%20salon%20interior%20with%20rose%20gold%20accents%2C%20sophisticated%20hair%20styling%20session&width=600&height=400&seq=service2&orientation=landscape"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </div>
-        <div className="p-6 bg-white">
-          <h3 className="font-serif text-xl text-gray-800 mb-3">Hair Beauty</h3>
-          <p className="text-gray-600 mb-4 leading-relaxed">
-            Transformative styling and treatments that celebrate your unique
-            beauty.
-          </p>
-          <a
-            href="/services"
-            className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
-          >
-            Explore Service
-            <i className="ri-arrow-right-line ml-2" />
-          </a>
-        </div>
-      </div>
-      <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div className="relative overflow-hidden">
-          <img
-            alt="Nails"
-            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=luxury%20nail%20salon%20with%20elegant%20manicure%20station%2C%20professional%20nail%20artist%20working%2C%20beautiful%20nail%20art%20designs%2C%20sophisticated%20nail%20care%20environment%20with%20soft%20lighting&width=600&height=400&seq=service3&orientation=landscape"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </div>
-        <div className="p-6 bg-white">
-          <h3 className="font-serif text-xl text-gray-800 mb-3">Nails</h3>
-          <p className="text-gray-600 mb-4 leading-relaxed">
-            Exquisite nail artistry and care that adds the perfect finishing
-            touch.
-          </p>
-          <a
-            href="/services"
-            className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
-          >
-            Explore Service
-            <i className="ri-arrow-right-line ml-2" />
-          </a>
-        </div>
-      </div>
-      <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div className="relative overflow-hidden">
-          <img
-            alt="Head Spa"
-            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=tranquil%20head%20spa%20treatment%20room%2C%20relaxing%20scalp%20massage%20therapy%2C%20serene%20wellness%20environment%2C%20professional%20head%20spa%20session%20with%20calming%20atmosphere&width=600&height=400&seq=service4&orientation=landscape"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </div>
-        <div className="p-6 bg-white">
-          <h3 className="font-serif text-xl text-gray-800 mb-3">Head Spa</h3>
-          <p className="text-gray-600 mb-4 leading-relaxed">
-            Deeply relaxing scalp treatments that soothe your mind and nourish
-            your hair.
-          </p>
-          <a
-            href="/services"
-            className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
-          >
-            Explore Service
-            <i className="ri-arrow-right-line ml-2" />
-          </a>
-        </div>
-      </div>
-      <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-        <div className="relative overflow-hidden">
-          <img
-            alt="Makeover"
-            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=professional%20makeup%20artist%20applying%20elegant%20makeup%2C%20luxury%20beauty%20makeover%20session%2C%20sophisticated%20makeup%20studio%20with%20premium%20cosmetics%2C%20glamorous%20beauty%20transformation&width=600&height=400&seq=service5&orientation=landscape"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </div>
-        <div className="p-6 bg-white">
-          <h3 className="font-serif text-xl text-gray-800 mb-3">Makeover</h3>
-          <p className="text-gray-600 mb-4 leading-relaxed">
-            Complete beauty transformations that reveal your most confident
-            self.
-          </p>
-          <a
-            href="/services"
-            className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
-          >
-            Explore Service
-            <i className="ri-arrow-right-line ml-2" />
-          </a>
-        </div>
-      </div>
-    </div>
-   <div style={{ textAlign: "center" }}>
-  <a
-    href="/services"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
-      padding: "16px 32px",
-      fontSize: "18px",
-      fontWeight: 500,
-      color: "#ffffff",
-      textDecoration: "none",
-      whiteSpace: "nowrap",
-      borderRadius: "12px",
-      cursor: "pointer",
-      background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)", // dark brown
-      boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
-      transition: "all 0.3s ease",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.background =
-        "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
-      e.currentTarget.style.boxShadow =
-        "0 12px 32px rgba(75, 42, 31, 0.5)";
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.background =
-        "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
-      e.currentTarget.style.boxShadow =
-        "0 8px 24px rgba(75, 42, 31, 0.35)";
-    }}
-  >
-    View All Services
-  </a>
-</div>
-
-  </div>
-</section>
-
-{/* locations  */}
- <section className="py-24 bg-gradient-to-br from-rose-50 to-pink-50">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
-        Our Locations
-      </h2>
-      <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Visit us at either of our beautifully appointed locations, each designed
-        to provide the ultimate in luxury and comfort.
-      </p>
-    </div>
-    <div className="space-y-16">
-      <div className="flex flex-col lg:flex-row items-center gap-12">
-        <div className="w-full lg:w-1/2">
-          <div className="relative overflow-hidden rounded-lg shadow-xl">
-            <img
-              alt="E'LAN BEAUTY Regents Park"
-              className="w-full h-96 object-cover"
-              src="https://public.readdy.ai/ai/img_res/5f057e25eb338c35cf9edf162e86db92.jpg"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-          </div>
-        </div>
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h3 className="font-serif text-3xl md:text-4xl text-gray-800 mb-4">
-            Regents Park
-          </h3>
-          <div className="w-16 h-px bg-rose-400 mx-auto lg:mx-0 mb-6" />
-          <div className="mb-6">
-            <div className="flex items-start justify-center lg:justify-start mb-3">
-              <i className="ri-map-pin-line text-rose-500 text-xl mr-3 mt-1" />
-              <p className="text-gray-700 text-lg">
-                Shop 5/57/61 Emerald Dr, Regents Park QLD 4118
-              </p>
-            </div>
-            <div className="flex items-center justify-center lg:justify-start">
-              <i className="ri-time-line text-rose-500 text-xl mr-3" />
-              <p className="text-gray-700 text-lg">Closes at 5:30 PM</p>
-            </div>
-          </div>
-          <div className="mb-8">
-            <h4 className="font-semibold text-gray-800 mb-3">
-              Featured Services:
-            </h4>
-            <ul className="space-y-2">
-              <li className="flex items-center justify-center lg:justify-start">
-                <i className="ri-check-line text-rose-500 mr-2" />
-                <span className="text-gray-600">Premium Spa Services</span>
-              </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <i className="ri-check-line text-rose-500 mr-2" />
-                <span className="text-gray-600">Expert Hair Styling</span>
-              </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <i className="ri-check-line text-rose-500 mr-2" />
-                <span className="text-gray-600">Luxury Nail Care</span>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="/locations/regents-park"
-              className="bg-rose-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-rose-600 transition-colors text-center whitespace-nowrap"
-            >
-              Discover Regents Park
-            </a>
-            <a
-              href="/contact"
-              className="border-2 border-rose-500 text-rose-500 px-6 py-3 rounded-lg font-medium hover:bg-rose-500 hover:text-white transition-colors text-center whitespace-nowrap"
-            >
-              Book Now
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
-        <div className="w-full lg:w-1/2">
-          <div className="relative overflow-hidden rounded-lg shadow-xl">
-            <img
-              alt="E'LAN BEAUTY Nundah"
-              className="w-full h-96 object-cover"
-              src="https://readdy.ai/api/search-image?query=sophisticated%20beauty%20salon%20in%20Nundah%2C%20elegant%20spa%20entrance%20with%20modern%20design%2C%20luxury%20wellness%20center%20storefront%2C%20professional%20beauty%20clinic%20with%20warm%20lighting&width=800&height=500&seq=location2&orientation=landscape"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-          </div>
-        </div>
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h3 className="font-serif text-3xl md:text-4xl text-gray-800 mb-4">
-            Nundah
-          </h3>
-          <div className="w-16 h-px bg-rose-400 mx-auto lg:mx-0 mb-6" />
-          <div className="mb-6">
-            <div className="flex items-start justify-center lg:justify-start mb-3">
-              <i className="ri-map-pin-line text-rose-500 text-xl mr-3 mt-1" />
-              <p className="text-gray-700 text-lg">
-                1220 Sandgate Rd, Nundah QLD 4012
-              </p>
-            </div>
-            <div className="flex items-center justify-center lg:justify-start">
-              <i className="ri-time-line text-rose-500 text-xl mr-3" />
-              <p className="text-gray-700 text-lg">Closes at 8:00 PM</p>
-            </div>
-          </div>
-          <div className="mb-8">
-            <h4 className="font-semibold text-gray-800 mb-3">
-              Featured Services:
-            </h4>
-            <ul className="space-y-2">
-              <li className="flex items-center justify-center lg:justify-start">
-                <i className="ri-check-line text-rose-500 mr-2" />
-                <span className="text-gray-600">Full Service Spa</span>
-              </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <i className="ri-check-line text-rose-500 mr-2" />
-                <span className="text-gray-600">Advanced Aesthetics</span>
-              </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <i className="ri-check-line text-rose-500 mr-2" />
-                <span className="text-gray-600">Relaxation Therapy</span>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="/locations/nundah"
-              className="bg-rose-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-rose-600 transition-colors text-center whitespace-nowrap"
-            >
-              Discover Nundah
-            </a>
-            <a
-              href="/contact"
-              className="border-2 border-rose-500 text-rose-500 px-6 py-3 rounded-lg font-medium hover:bg-rose-500 hover:text-white transition-colors text-center whitespace-nowrap"
-            >
-              Book Now
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-{/* gallery  */}
-
-  <section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
-        Beauty in Every Detail
-      </h2>
-      <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
-      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-        Explore our gallery of transformations and discover the artistry that
-        awaits you.
-      </p>
-    </div>
-    <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-      <div className="break-inside-avoid cursor-pointer group">
-        <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-          <img
-            alt="Elegant Nail Art"
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://public.readdy.ai/ai/img_res/c3743d11137c08e932778e54a6b518f2.jpg"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-            <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div>
-      </div>
-      <div className="break-inside-avoid cursor-pointer group">
-        <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-          <img
-            alt="Hair Transformation"
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=stunning%20hair%20transformation%20before%20and%20after%2C%20professional%20hair%20styling%20result%2C%20elegant%20hair%20color%20and%20cut%2C%20luxury%20salon%20hair%20makeover&width=400&height=300&seq=gallery2&orientation=landscape"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-            <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div>
-      </div>
-      <div className="break-inside-avoid cursor-pointer group">
-        <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-          <img
-            alt="Radiant Skin"
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=glowing%20skin%20after%20facial%20treatment%2C%20radiant%20complexion%2C%20professional%20skincare%20results%2C%20luxury%20spa%20facial%20outcome%20with%20natural%20beauty&width=400&height=500&seq=gallery3&orientation=portrait"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-            <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div>
-      </div>
-      <div className="break-inside-avoid cursor-pointer group">
-        <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-          <img
-            alt="Makeup Artistry"
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=elegant%20makeup%20transformation%2C%20professional%20makeup%20artistry%2C%20sophisticated%20beauty%20look%2C%20glamorous%20makeover%20result%20with%20natural%20elegance&width=400&height=500&seq=gallery4&orientation=portrait"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-            <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div>
-      </div>
-      <div className="break-inside-avoid cursor-pointer group">
-        <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-          <img
-            alt="Spa Experience"
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=relaxing%20spa%20treatment%20session%2C%20peaceful%20wellness%20therapy%2C%20serene%20head%20spa%20experience%2C%20tranquil%20beauty%20treatment%20atmosphere&width=400&height=300&seq=gallery5&orientation=landscape"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-            <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div>
-      </div>
-      <div className="break-inside-avoid cursor-pointer group">
-        <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-          <img
-            alt="Salon Interior"
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-            src="https://readdy.ai/api/search-image?query=luxury%20beauty%20salon%20interior%2C%20elegant%20treatment%20room%20design%2C%20sophisticated%20spa%20environment%20with%20soft%20lighting%20and%20premium%20amenities&width=400&height=300&seq=gallery6&orientation=landscape"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-            <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="text-center mt-12">
-       <a
-    href="/services"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
-      padding: "16px 32px",
-      fontSize: "18px",
-      fontWeight: 500,
-      color: "#ffffff",
-      textDecoration: "none",
-      whiteSpace: "nowrap",
-      borderRadius: "12px",
-      cursor: "pointer",
-      background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)", // dark brown
-      boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
-      transition: "all 0.3s ease",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.background =
-        "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
-      e.currentTarget.style.boxShadow =
-        "0 12px 32px rgba(75, 42, 31, 0.5)";
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.background =
-        "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
-      e.currentTarget.style.boxShadow =
-        "0 8px 24px rgba(75, 42, 31, 0.35)";
-    }}
-  >
-    View All Gallery
-  </a>
-    </div>
-  </div>
-</section>
-
-{/* testimonial  */}
-    <section className="py-24 bg-gradient-to-br from-rose-50 to-pink-50">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
-            What Our Clients Say
-          </h2>
+        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight">
+            E'LAN BEAUTY
+          </h1>
           <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover why our clients choose E'LAN Beauty.
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-light mb-4 tracking-wide">
+            Where Elegance Meets Excellence
+          </h2>
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed opacity-90">
+            A sanctuary of beauty, artistry, and relaxation
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="/contact"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "16px 32px",
+                fontSize: "18px",
+                fontWeight: 500,
+                color: "#ffffff",
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+                borderRadius: "12px",
+                cursor: "pointer",
+                background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)", // dark brown
+                boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
+                e.currentTarget.style.boxShadow =
+                  "0 12px 32px rgba(75, 42, 31, 0.5)";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
+                e.currentTarget.style.boxShadow =
+                  "0 8px 24px rgba(75, 42, 31, 0.35)";
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+            >
+              Book Your Experience
+            </a>
+
+            <button
+              onClick={() => {
+                document.getElementById("location")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="inline-flex items-center justify-center font-medium transition-all duration-300 whitespace-nowrap cursor-pointer 
+  border-2 border-white text-white 
+  hover:bg-white hover:text-primary 
+  px-8 py-4 text-lg rounded-lg transform hover:scale-105"
+            >
+              Explore Our Locations
+            </button>
+          </div>
         </div>
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse" />
+          </div>
+        </div>
+      </section>
 
-        {/* Carousel */}
-        <div className="relative">
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex">
-              {testimonials.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex-[0_0_100%] px-4"
+      {/* about  */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="mb-12">
+            <div className="w-16 h-px bg-rose-400 mx-auto mb-8" />
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-8 leading-relaxed">
+              At E'LAN BEAUTY, we believe beauty is personal.
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Every treatment is an experience, crafted with care, expertise,
+              and intention.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            <div className="text-center">
+              <img
+                alt="Luxury Care"
+                className="w-full h-64 object-cover rounded-lg mb-4"
+                src="https://public.readdy.ai/ai/img_res/0b7cafdc776fd8fd71c66783433bce46.jpg"
+              />
+              <h3 className="font-serif text-xl text-gray-800 mb-2">
+                Artistry in Motion
+              </h3>
+              <p className="text-gray-600">
+                Every touch tells a story of expertise
+              </p>
+            </div>
+            <div className="text-center">
+              <img
+                alt="Premium Products"
+                className="w-full h-64 object-cover rounded-lg mb-4"
+                src="https://readdy.ai/api/search-image?query=luxury%20beauty%20products%20and%20tools%20arranged%20elegantly%2C%20premium%20skincare%20bottles%2C%20rose%20gold%20accents%2C%20minimalist%20spa%20setting%20with%20soft%20natural%20lighting&width=400&height=300&seq=intro2&orientation=landscape"
+              />
+              <h3 className="font-serif text-xl text-gray-800 mb-2">
+                Premium Excellence
+              </h3>
+              <p className="text-gray-600">
+                Only the finest products grace your skin
+              </p>
+            </div>
+            <div className="text-center">
+              <img
+                alt="Calm Atmosphere"
+                className="w-full h-64 object-cover rounded-lg mb-4"
+                src="https://readdy.ai/api/search-image?query=serene%20spa%20environment%20with%20soft%20textures%2C%20calming%20neutral%20tones%2C%20peaceful%20atmosphere%2C%20luxury%20wellness%20sanctuary%20with%20warm%20ambient%20lighting&width=400&height=300&seq=intro3&orientation=landscape"
+              />
+              <h3 className="font-serif text-xl text-gray-800 mb-2">
+                Tranquil Sanctuary
+              </h3>
+              <p className="text-gray-600">
+                Where time slows and beauty awakens
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* experndec */}
+      <section className="py-24 bg-gradient-to-br from-rose-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
+              The E'LAN Experience
+            </h2>
+            <div className="w-24 h-px bg-rose-400 mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
+                <i className="ri-heart-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
+              </div>
+              <h3 className="font-serif text-xl text-gray-800 mb-4">
+                Luxury Care
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Indulgent treatments that nurture your natural beauty with the
+                finest techniques and premium products.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
+                <i className="ri-brush-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
+              </div>
+              <h3 className="font-serif text-xl text-gray-800 mb-4">
+                Expert Artists
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our skilled professionals bring years of expertise and artistic
+                vision to every service.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
+                <i className="ri-star-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
+              </div>
+              <h3 className="font-serif text-xl text-gray-800 mb-4">
+                Premium Products
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We exclusively use high-end, carefully selected products that
+                deliver exceptional results.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-8 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-rose-500 transition-colors duration-300">
+                <i className="ri-leaf-line text-2xl text-rose-500 group-hover:text-white transition-colors duration-300" />
+              </div>
+              <h3 className="font-serif text-xl text-gray-800 mb-4">
+                Calm Atmosphere
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Step into our serene sanctuary designed to relax your mind and
+                rejuvenate your spirit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* service  */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
+              Our Signature Services
+            </h2>
+            <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Discover our comprehensive range of beauty and wellness services,
+              each designed to enhance your natural elegance.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  alt="Spa & Aesthetics"
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://public.readdy.ai/ai/img_res/c24565c0aae2150b2aeae37ce06c3add.jpg"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="p-6 bg-white">
+                <h3 className="font-serif text-xl text-gray-800 mb-3">
+                  Spa &amp; Aesthetics
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Rejuvenating treatments that restore your skin's natural
+                  radiance and vitality.
+                </p>
+                <a
+                  href="/services"
+                  className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
                 >
-                  <div className="bg-white rounded-xl shadow-lg p-8 mx-auto max-w-2xl">
-                    {/* Stars */}
-                    <div className="flex justify-center mb-4">
-                      {Array.from({ length: item.rating }).map((_, i) => (
-                        <Star
-                          key={i}
-                          className="w-5 h-5 fill-yellow-400 text-yellow-400"
-                        />
-                      ))}
-                    </div>
+                  Explore Service
+                  <i className="ri-arrow-right-line ml-2" />
+                </a>
+              </div>
+            </div>
+            <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  alt="Hair Beauty"
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=elegant%20hair%20salon%20with%20professional%20stylist%2C%20luxury%20hair%20treatment%2C%20modern%20beauty%20salon%20interior%20with%20rose%20gold%20accents%2C%20sophisticated%20hair%20styling%20session&width=600&height=400&seq=service2&orientation=landscape"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="p-6 bg-white">
+                <h3 className="font-serif text-xl text-gray-800 mb-3">
+                  Hair Beauty
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Transformative styling and treatments that celebrate your
+                  unique beauty.
+                </p>
+                <a
+                  href="/services"
+                  className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
+                >
+                  Explore Service
+                  <i className="ri-arrow-right-line ml-2" />
+                </a>
+              </div>
+            </div>
+            <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  alt="Nails"
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=luxury%20nail%20salon%20with%20elegant%20manicure%20station%2C%20professional%20nail%20artist%20working%2C%20beautiful%20nail%20art%20designs%2C%20sophisticated%20nail%20care%20environment%20with%20soft%20lighting&width=600&height=400&seq=service3&orientation=landscape"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="p-6 bg-white">
+                <h3 className="font-serif text-xl text-gray-800 mb-3">Nails</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Exquisite nail artistry and care that adds the perfect
+                  finishing touch.
+                </p>
+                <a
+                  href="/services"
+                  className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
+                >
+                  Explore Service
+                  <i className="ri-arrow-right-line ml-2" />
+                </a>
+              </div>
+            </div>
+            <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  alt="Head Spa"
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=tranquil%20head%20spa%20treatment%20room%2C%20relaxing%20scalp%20massage%20therapy%2C%20serene%20wellness%20environment%2C%20professional%20head%20spa%20session%20with%20calming%20atmosphere&width=600&height=400&seq=service4&orientation=landscape"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="p-6 bg-white">
+                <h3 className="font-serif text-xl text-gray-800 mb-3">
+                  Head Spa
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Deeply relaxing scalp treatments that soothe your mind and
+                  nourish your hair.
+                </p>
+                <a
+                  href="/services"
+                  className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
+                >
+                  Explore Service
+                  <i className="ri-arrow-right-line ml-2" />
+                </a>
+              </div>
+            </div>
+            <div className="group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  alt="Makeover"
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=professional%20makeup%20artist%20applying%20elegant%20makeup%2C%20luxury%20beauty%20makeover%20session%2C%20sophisticated%20makeup%20studio%20with%20premium%20cosmetics%2C%20glamorous%20beauty%20transformation&width=600&height=400&seq=service5&orientation=landscape"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <div className="p-6 bg-white">
+                <h3 className="font-serif text-xl text-gray-800 mb-3">
+                  Makeover
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Complete beauty transformations that reveal your most
+                  confident self.
+                </p>
+                <a
+                  href="/services"
+                  className="text-rose-500 font-medium hover:text-rose-600 transition-colors inline-flex items-center"
+                >
+                  Explore Service
+                  <i className="ri-arrow-right-line ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <a
+              href="/services"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "16px 32px",
+                fontSize: "18px",
+                fontWeight: 500,
+                color: "#ffffff",
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+                borderRadius: "12px",
+                cursor: "pointer",
+                background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)", // dark brown
+                boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
+                e.currentTarget.style.boxShadow =
+                  "0 12px 32px rgba(75, 42, 31, 0.5)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
+                e.currentTarget.style.boxShadow =
+                  "0 8px 24px rgba(75, 42, 31, 0.35)";
+              }}
+            >
+              View All Services
+            </a>
+          </div>
+        </div>
+      </section>
 
-                    {/* Quote */}
-                    <blockquote className="text-lg text-gray-700 mb-6 leading-relaxed text-center italic">
-                      “{item.quote}”
-                    </blockquote>
-
-                    {/* Author */}
-                    <div className="text-center">
-                      <h4 className="font-semibold text-gray-800 text-lg">
-                        {item.name}
-                      </h4>
-                      <p className="text-rose-500 font-medium">
-                        {item.service}
-                      </p>
-                    </div>
+      {/* locations  */}
+      <section   id="location" className="py-24 bg-gradient-to-br from-rose-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
+              Our Locations
+            </h2>
+            <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Visit us at either of our beautifully appointed locations, each
+              designed to provide the ultimate in luxury and comfort.
+            </p>
+          </div>
+          <div className="space-y-16">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              <div className="w-full lg:w-1/2">
+                <div className="relative overflow-hidden rounded-lg shadow-xl">
+                  <img
+                    alt="E'LAN BEAUTY Regents Park"
+                    className="w-full h-96 object-cover"
+                    src="https://public.readdy.ai/ai/img_res/5f057e25eb338c35cf9edf162e86db92.jpg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                </div>
+              </div>
+              <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <h3 className="font-serif text-3xl md:text-4xl text-gray-800 mb-4">
+                  Regents Park
+                </h3>
+                <div className="w-16 h-px bg-rose-400 mx-auto lg:mx-0 mb-6" />
+                <div className="mb-6">
+                  <div className="flex items-start justify-center lg:justify-start mb-3">
+                    <i className="ri-map-pin-line text-rose-500 text-xl mr-3 mt-1" />
+                    <p className="text-gray-700 text-lg">
+                      Shop 5/57/61 Emerald Dr, Regents Park QLD 4118
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center lg:justify-start">
+                    <i className="ri-time-line text-rose-500 text-xl mr-3" />
+                    <p className="text-gray-700 text-lg">Closes at 5:30 PM</p>
                   </div>
                 </div>
+                <div className="mb-8">
+                  <h4 className="font-semibold text-gray-800 mb-3">
+                    Featured Services:
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-center justify-center lg:justify-start">
+                      <i className="ri-check-line text-rose-500 mr-2" />
+                      <span className="text-gray-600">
+                        Premium Spa Services
+                      </span>
+                    </li>
+                    <li className="flex items-center justify-center lg:justify-start">
+                      <i className="ri-check-line text-rose-500 mr-2" />
+                      <span className="text-gray-600">Expert Hair Styling</span>
+                    </li>
+                    <li className="flex items-center justify-center lg:justify-start">
+                      <i className="ri-check-line text-rose-500 mr-2" />
+                      <span className="text-gray-600">Luxury Nail Care</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="/locations/regents-park"
+                    className="bg-rose-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-rose-600 transition-colors text-center whitespace-nowrap"
+                  >
+                    Discover Regents Park
+                  </a>
+                  <a
+                    href="/contact"
+                    className="border-2 border-rose-500 text-rose-500 px-6 py-3 rounded-lg font-medium hover:bg-rose-500 hover:text-white transition-colors text-center whitespace-nowrap"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+              <div className="w-full lg:w-1/2">
+                <div className="relative overflow-hidden rounded-lg shadow-xl">
+                  <img
+                    alt="E'LAN BEAUTY Nundah"
+                    className="w-full h-96 object-cover"
+                    src="https://readdy.ai/api/search-image?query=sophisticated%20beauty%20salon%20in%20Nundah%2C%20elegant%20spa%20entrance%20with%20modern%20design%2C%20luxury%20wellness%20center%20storefront%2C%20professional%20beauty%20clinic%20with%20warm%20lighting&width=800&height=500&seq=location2&orientation=landscape"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                </div>
+              </div>
+              <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <h3 className="font-serif text-3xl md:text-4xl text-gray-800 mb-4">
+                  Nundah
+                </h3>
+                <div className="w-16 h-px bg-rose-400 mx-auto lg:mx-0 mb-6" />
+                <div className="mb-6">
+                  <div className="flex items-start justify-center lg:justify-start mb-3">
+                    <i className="ri-map-pin-line text-rose-500 text-xl mr-3 mt-1" />
+                    <p className="text-gray-700 text-lg">
+                      1220 Sandgate Rd, Nundah QLD 4012
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center lg:justify-start">
+                    <i className="ri-time-line text-rose-500 text-xl mr-3" />
+                    <p className="text-gray-700 text-lg">Closes at 8:00 PM</p>
+                  </div>
+                </div>
+                <div className="mb-8">
+                  <h4 className="font-semibold text-gray-800 mb-3">
+                    Featured Services:
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-center justify-center lg:justify-start">
+                      <i className="ri-check-line text-rose-500 mr-2" />
+                      <span className="text-gray-600">Full Service Spa</span>
+                    </li>
+                    <li className="flex items-center justify-center lg:justify-start">
+                      <i className="ri-check-line text-rose-500 mr-2" />
+                      <span className="text-gray-600">Advanced Aesthetics</span>
+                    </li>
+                    <li className="flex items-center justify-center lg:justify-start">
+                      <i className="ri-check-line text-rose-500 mr-2" />
+                      <span className="text-gray-600">Relaxation Therapy</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="/locations/nundah"
+                    className="bg-rose-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-rose-600 transition-colors text-center whitespace-nowrap"
+                  >
+                    Discover Nundah
+                  </a>
+                  <a
+                    href="/contact"
+                    className="border-2 border-rose-500 text-rose-500 px-6 py-3 rounded-lg font-medium hover:bg-rose-500 hover:text-white transition-colors text-center whitespace-nowrap"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* gallery  */}
+
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
+              Beauty in Every Detail
+            </h2>
+            <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Explore our gallery of transformations and discover the artistry
+              that awaits you.
+            </p>
+          </div>
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+            <div className="break-inside-avoid cursor-pointer group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
+                  alt="Elegant Nail Art"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://public.readdy.ai/ai/img_res/c3743d11137c08e932778e54a6b518f2.jpg"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            </div>
+            <div className="break-inside-avoid cursor-pointer group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
+                  alt="Hair Transformation"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=stunning%20hair%20transformation%20before%20and%20after%2C%20professional%20hair%20styling%20result%2C%20elegant%20hair%20color%20and%20cut%2C%20luxury%20salon%20hair%20makeover&width=400&height=300&seq=gallery2&orientation=landscape"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            </div>
+            <div className="break-inside-avoid cursor-pointer group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
+                  alt="Radiant Skin"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=glowing%20skin%20after%20facial%20treatment%2C%20radiant%20complexion%2C%20professional%20skincare%20results%2C%20luxury%20spa%20facial%20outcome%20with%20natural%20beauty&width=400&height=500&seq=gallery3&orientation=portrait"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            </div>
+            <div className="break-inside-avoid cursor-pointer group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
+                  alt="Makeup Artistry"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=elegant%20makeup%20transformation%2C%20professional%20makeup%20artistry%2C%20sophisticated%20beauty%20look%2C%20glamorous%20makeover%20result%20with%20natural%20elegance&width=400&height=500&seq=gallery4&orientation=portrait"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            </div>
+            <div className="break-inside-avoid cursor-pointer group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
+                  alt="Spa Experience"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=relaxing%20spa%20treatment%20session%2C%20peaceful%20wellness%20therapy%2C%20serene%20head%20spa%20experience%2C%20tranquil%20beauty%20treatment%20atmosphere&width=400&height=300&seq=gallery5&orientation=landscape"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            </div>
+            <div className="break-inside-avoid cursor-pointer group">
+              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img
+                  alt="Salon Interior"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                  src="https://readdy.ai/api/search-image?query=luxury%20beauty%20salon%20interior%2C%20elegant%20treatment%20room%20design%2C%20sophisticated%20spa%20environment%20with%20soft%20lighting%20and%20premium%20amenities&width=400&height=300&seq=gallery6&orientation=landscape"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <i className="ri-zoom-in-line text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <a
+              href="/services"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "16px 32px",
+                fontSize: "18px",
+                fontWeight: 500,
+                color: "#ffffff",
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+                borderRadius: "12px",
+                cursor: "pointer",
+                background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)", // dark brown
+                boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
+                e.currentTarget.style.boxShadow =
+                  "0 12px 32px rgba(75, 42, 31, 0.5)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
+                e.currentTarget.style.boxShadow =
+                  "0 8px 24px rgba(75, 42, 31, 0.35)";
+              }}
+            >
+              View All Gallery
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* testimonial  */}
+      <section className="py-24 bg-gradient-to-br from-rose-50 to-pink-50">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Heading */}
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-gray-800 mb-4">
+              What Our Clients Say
+            </h2>
+            <div className="w-24 h-px bg-rose-400 mx-auto mb-6" />
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Discover why our clients choose E'LAN Beauty.
+            </p>
+          </div>
+
+          {/* Carousel */}
+          <div className="relative">
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex">
+                {testimonials.map((item, index) => (
+                  <div key={index} className="flex-[0_0_100%] px-4">
+                    <div className="bg-white rounded-xl shadow-lg p-8 mx-auto max-w-2xl">
+                      {/* Stars */}
+                      <div className="flex justify-center mb-4">
+                        {Array.from({ length: item.rating }).map((_, i) => (
+                          <Star
+                            key={i}
+                            className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                          />
+                        ))}
+                      </div>
+
+                      {/* Quote */}
+                      <blockquote className="text-lg text-gray-700 mb-6 leading-relaxed text-center italic">
+                        “{item.quote}”
+                      </blockquote>
+
+                      {/* Author */}
+                      <div className="text-center">
+                        <h4 className="font-semibold text-gray-800 text-lg">
+                          {item.name}
+                        </h4>
+                        <p className="text-rose-500 font-medium">
+                          {item.service}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Prev / Next */}
+            <button
+              onClick={scrollPrev}
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition"
+            >
+              <ChevronLeft className="w-5 h-5 text-rose-500" />
+            </button>
+
+            <button
+              onClick={scrollNext}
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition"
+            >
+              <ChevronRight className="w-5 h-5 text-rose-500" />
+            </button>
+
+            {/* Dots */}
+            <div className="flex justify-center mt-8 gap-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => scrollTo(index)}
+                  className={`w-3 h-3 rounded-full transition ${
+                    index === selectedIndex
+                      ? "bg-rose-500 scale-110"
+                      : "bg-gray-300"
+                  }`}
+                />
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Prev / Next */}
-          <button
-            onClick={scrollPrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition"
-          >
-            <ChevronLeft className="w-5 h-5 text-rose-500" />
-          </button>
+      {/* TELEPHONE  */}
+      <section className="py-24 bg-gradient-to-r from-rose-100 via-pink-50 to-rose-100">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <div className="mb-8">
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gray-800 mb-6 leading-tight">
+              Ready to Elevate Your Beauty Experience?
+            </h2>
+            <div className="w-24 h-px bg-rose-400 mx-auto mb-8" />
+            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              Book your appointment today and discover the difference that true
+              luxury and expertise can make.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            {/* Book Your Appointment */}
+            <a
+              href="/appointment"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "16px 32px",
+                fontSize: "18px",
+                fontWeight: 500,
+                color: "#ffffff",
+                textDecoration: "none",
+                whiteSpace: "nowrap",
+                borderRadius: "12px",
+                cursor: "pointer",
+                background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)",
+                boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
+                transition: "all 0.3s ease",
+                transform: "scale(1)",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
+                e.currentTarget.style.boxShadow =
+                  "0 12px 32px rgba(75, 42, 31, 0.5)";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
+                e.currentTarget.style.boxShadow =
+                  "0 8px 24px rgba(75, 42, 31, 0.35)";
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+            >
+              Book Your Appointment
+            </a>
 
-          <button
-            onClick={scrollNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition"
-          >
-            <ChevronRight className="w-5 h-5 text-rose-500" />
-          </button>
+            {/* Contact Us (unchanged) */}
+            <button className="inline-flex items-center justify-center font-medium transition-all duration-300 whitespace-nowrap cursor-pointer bg-white text-primary-800 border-2 border-primary-800 hover:bg-primary-50 px-8 py-4 text-lg rounded-lg transform hover:scale-105">
+              Contact Us
+            </button>
+          </div>
 
-          {/* Dots */}
-          <div className="flex justify-center mt-8 gap-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => scrollTo(index)}
-                className={`w-3 h-3 rounded-full transition ${
-                  index === selectedIndex
-                    ? "bg-rose-500 scale-110"
-                    : "bg-gray-300"
-                }`}
-              />
-            ))}
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="ri-phone-line text-white text-xl" />
+              </div>
+              <h3 className="font-semibold text-gray-800 mb-2">Call Us</h3>
+              <p className="text-gray-600">Ready to book? Give us a call</p>
+              <p className="text-rose-500 font-medium">(07) 3000 0000</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="ri-time-line text-white text-xl" />
+              </div>
+              <h3 className="font-semibold text-gray-800 mb-2">
+                Opening Hours
+              </h3>
+              <p className="text-gray-600">Monday - Sunday</p>
+              <p className="text-rose-500 font-medium">9:00 AM - 8:00 PM</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    {/* TELEPHONE  */}
-     <section className="py-24 bg-gradient-to-r from-rose-100 via-pink-50 to-rose-100">
-  <div className="max-w-4xl mx-auto px-6 text-center">
-    <div className="mb-8">
-      <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gray-800 mb-6 leading-tight">
-        Ready to Elevate Your Beauty Experience?
-      </h2>
-      <div className="w-24 h-px bg-rose-400 mx-auto mb-8" />
-      <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-        Book your appointment today and discover the difference that true luxury
-        and expertise can make.
-      </p>
-    </div>
-   <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-  {/* Book Your Appointment */}
-  <a
-    href="/appointment"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
-      padding: "16px 32px",
-      fontSize: "18px",
-      fontWeight: 500,
-      color: "#ffffff",
-      textDecoration: "none",
-      whiteSpace: "nowrap",
-      borderRadius: "12px",
-      cursor: "pointer",
-      background: "linear-gradient(90deg, #6b3e2e, #4b2a1f)",
-      boxShadow: "0 8px 24px rgba(75, 42, 31, 0.35)",
-      transition: "all 0.3s ease",
-      transform: "scale(1)",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.background =
-        "linear-gradient(90deg, #4b2a1f, #6b3e2e)";
-      e.currentTarget.style.boxShadow =
-        "0 12px 32px rgba(75, 42, 31, 0.5)";
-      e.currentTarget.style.transform = "scale(1.05)";
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.background =
-        "linear-gradient(90deg, #6b3e2e, #4b2a1f)";
-      e.currentTarget.style.boxShadow =
-        "0 8px 24px rgba(75, 42, 31, 0.35)";
-      e.currentTarget.style.transform = "scale(1)";
-    }}
-  >
-    Book Your Appointment
-  </a>
-
-  {/* Contact Us (unchanged) */}
-  <button className="inline-flex items-center justify-center font-medium transition-all duration-300 whitespace-nowrap cursor-pointer bg-white text-primary-800 border-2 border-primary-800 hover:bg-primary-50 px-8 py-4 text-lg rounded-lg transform hover:scale-105">
-    Contact Us
-  </button>
-
- 
-</div>
-
-    <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-      <div className="text-center">
-        <div className="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center mx-auto mb-4">
-          <i className="ri-phone-line text-white text-xl" />
-        </div>
-        <h3 className="font-semibold text-gray-800 mb-2">Call Us</h3>
-        <p className="text-gray-600">Ready to book? Give us a call</p>
-        <p className="text-rose-500 font-medium">(07) 3000 0000</p>
-      </div>
-      <div className="text-center">
-        <div className="w-12 h-12 bg-rose-500 rounded-full flex items-center justify-center mx-auto mb-4">
-          <i className="ri-time-line text-white text-xl" />
-        </div>
-        <h3 className="font-semibold text-gray-800 mb-2">Opening Hours</h3>
-        <p className="text-gray-600">Monday - Sunday</p>
-        <p className="text-rose-500 font-medium">9:00 AM - 8:00 PM</p>
-      </div>
-    </div>
-  </div>
-</section>
-</>
-
+      </section>
+    </>
   );
 };
 
