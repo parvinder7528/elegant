@@ -43,9 +43,9 @@ const Gallery = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              'url("https://readdy.ai/api/search-image?query=luxury%20beauty%20salon%20gallery%20showcase%2C%20elegant%20interior%20with%20beautiful%20lighting%2C%20sophisticated%20spa%20atmosphere%20with%20rose%20gold%20accents&width=1200&height=400&seq=galleryhero&orientation=landscape")'
-          }}
+      backgroundImage:
+        'url("https://static.readdy.ai/image/42cabbbc9f59707019254de677c0f30c/7f7f216caf7709e4eb4d641a3290384b.png")'
+    }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white">

@@ -14,7 +14,7 @@ const About = () => {
     <img
       alt="About E'LAN BEAUTY"
       className="w-full h-full object-cover object-center"
-      src="https://public.readdy.ai/ai/img_res/39b5f8bfef707ebc8ad535912b735361.jpg"
+      src="https://static.readdy.ai/image/42cabbbc9f59707019254de677c0f30c/d031f70c97eb171af241253daa953bfe.png"
     />
     <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
   </div>

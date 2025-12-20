@@ -74,7 +74,7 @@ const Hero = () => {
           <img
             alt="E'LAN BEAUTY Luxury Spa"
             className="w-full h-full object-cover object-center"
-            src="https://public.readdy.ai/ai/img_res/c923059c85179a03c4ebe6cc176ae266.jpg"
+            src="https://static.readdy.ai/image/42cabbbc9f59707019254de677c0f30c/056cc638656e73364a1267d6d754796e.png"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
         </div>
@@ -166,7 +166,7 @@ const Hero = () => {
               <img
                 alt="Luxury Care"
                 className="w-full h-64 object-cover rounded-lg mb-4"
-                src="https://public.readdy.ai/ai/img_res/0b7cafdc776fd8fd71c66783433bce46.jpg"
+                src="https://static.readdy.ai/image/42cabbbc9f59707019254de677c0f30c/c55276da37fd54b019e98fa16d8e667a.png"
               />
               <h3 className="font-serif text-xl text-gray-800 mb-2">
                 Artistry in Motion
@@ -179,7 +179,7 @@ const Hero = () => {
               <img
                 alt="Premium Products"
                 className="w-full h-64 object-cover rounded-lg mb-4"
-                src="https://readdy.ai/api/search-image?query=luxury%20beauty%20products%20and%20tools%20arranged%20elegantly%2C%20premium%20skincare%20bottles%2C%20rose%20gold%20accents%2C%20minimalist%20spa%20setting%20with%20soft%20natural%20lighting&width=400&height=300&seq=intro2&orientation=landscape"
+                src="https://public.readdy.ai/ai/img_res/7c262a13f02504b5d02ff5cdc167de9a.jpg"
               />
               <h3 className="font-serif text-xl text-gray-800 mb-2">
                 Premium Excellence
@@ -192,7 +192,7 @@ const Hero = () => {
               <img
                 alt="Calm Atmosphere"
                 className="w-full h-64 object-cover rounded-lg mb-4"
-                src="https://readdy.ai/api/search-image?query=serene%20spa%20environment%20with%20soft%20textures%2C%20calming%20neutral%20tones%2C%20peaceful%20atmosphere%2C%20luxury%20wellness%20sanctuary%20with%20warm%20ambient%20lighting&width=400&height=300&seq=intro3&orientation=landscape"
+                src="https://static.readdy.ai/image/42cabbbc9f59707019254de677c0f30c/8f3d50bb6b6f91d07dbe915a838885cb.png"
               />
               <h3 className="font-serif text-xl text-gray-800 mb-2">
                 Tranquil Sanctuary
@@ -468,7 +468,7 @@ const Hero = () => {
                   <img
                     alt="E'LAN BEAUTY Regents Park"
                     className="w-full h-96 object-cover"
-                    src="https://public.readdy.ai/ai/img_res/5f057e25eb338c35cf9edf162e86db92.jpg"
+                     src="https://static.readdy.ai/image/42cabbbc9f59707019254de677c0f30c/288ff7b101761e639351b80c505979b6.png"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 </div>
@@ -533,7 +533,7 @@ const Hero = () => {
                   <img
                     alt="E'LAN BEAUTY Nundah"
                     className="w-full h-96 object-cover"
-                    src="https://readdy.ai/api/search-image?query=sophisticated%20beauty%20salon%20in%20Nundah%2C%20elegant%20spa%20entrance%20with%20modern%20design%2C%20luxury%20wellness%20center%20storefront%2C%20professional%20beauty%20clinic%20with%20warm%20lighting&width=800&height=500&seq=location2&orientation=landscape"
+                    src="https://static.readdy.ai/image/42cabbbc9f59707019254de677c0f30c/0d869a5b29fec4e142460d3c6796301c.png"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 </div>
